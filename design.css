@@ -1,0 +1,142 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+} 
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #efe5e3;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.info {
+    width: 45%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify; 
+}
+
+.info__h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info__p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.image {
+    width: 45%;
+    text-align: right;
+    margin: 0 auto;
+}
+
+.icons-buttons {
+    margin-top: 20px;
+}
+
+.icons-buttons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.icons-buttons a i {
+    margin-right: 5px;
+}
+
+.button {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #de9586; 
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s; 
+}
+
+.button a:hover {
+    background-color: #bd745f; 
+}
+
+.iconbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #e4c7c1;
+    overflow: auto;
+}
+
+.iconbar a {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    float: left;
+    width: 20%;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+}
+
+.iconbar a:hover {
+    background-color: #de9586;
+}
+
+.actived {
+    background-color: #de9586;
+}
+
+footer {
+    background-color: #e4c7c1;
+    color: #666;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .info {
+        width: 90%;
+    }
+
+    .info__h1 {
+        text-align: center;
+    }
+
+    .image {
+        margin: 40px auto;
+    }
+
+    .button {
+        width: 40%;
+        margin: 0 auto;
+    }
+}

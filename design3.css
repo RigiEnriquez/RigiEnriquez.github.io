@@ -1,0 +1,151 @@
+body {
+    background-color: #efe5e3;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-bottom: 550px;
+}
+
+.iconbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #e4c7c1;
+    overflow: auto;
+}
+
+.iconbar a {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    float: left;
+    width: 20%;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+}
+
+.iconbar a:hover {
+    background-color: #de9586;
+}
+
+.active {
+    background-color: #de9586;
+}
+
+.info {
+    text-align: center;
+    margin: 0 auto; 
+    max-width: 800px; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.info_h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info_p {
+    text-align: justify;
+    margin-left: 80px;
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+ol {
+    text-align: left;
+    margin-left: 90px;
+    font-size: 18px;
+    color: #666;    
+    line-height: 1.6; 
+}
+
+.IMGgallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 65px;
+}
+
+.image {
+    width: calc(33.33% - 20px);
+    height: 300px; 
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    height: auto; 
+    transition: transform 0.3s ease;
+}
+
+.image > img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+}
+
+.gif {
+    margin-top: 35px;
+    position: relative; 
+}
+
+.gif img {
+    width: 100%;
+    height: auto; 
+    transition: transform 0.3s ease;
+}
+
+.gif > img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+}
+
+.button {
+    background-color: #de9586;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #bd745f;
+}
+
+footer {
+    background-color: #e4c7c1;
+    color: #666;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (max-width: 767px) {
+
+    .info_p {
+        text-align: center; 
+        margin: 0; 
+        padding: 0 20px; 
+        font-size: 16px; 
+        line-height: 1.6; 
+    }
+
+    body {
+        padding-bottom: 20%;
+    }
+
+}

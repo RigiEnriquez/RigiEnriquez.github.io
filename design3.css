@@ -141,11 +141,7 @@ footer {
         font-size: 16px; 
         line-height: 1.6; 
     }
-
-    body {
-        padding-bottom: 20%;
-    }
-
+    
     footer {
         position: static;
     }

@@ -103,10 +103,9 @@ footer {
     color: #666;
     text-align: center;
     padding: 10px 0;
-    position: fixed; 
-    bottom: 0;
+    position: absolute;
     width: 100%;
-    left: 0;
+    bottom: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -121,5 +120,9 @@ footer {
 
     video {
         width: 50%;
+    }
+
+    footer {
+        position: static;
     }
 }
